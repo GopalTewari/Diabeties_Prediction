@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			    <div class="right">
+				    <h2>Prediction for Diabetes</h2>
+
+				        <div class="form">
+                         <form action="/predict" method="POST">
+            <input type="number" class="form-control mb-3" name="Pregnancies" id="Pregnancies" placeholder="Pregnancies">
+            <input type="number"  class="form-control mb-3" name="Glucose" id="Glucose" placeholder="Glucose value">
+            <input type="number" class="form-control mb-3"  name="BloodPressure" id="BloodPressure" placeholder="Blood Pressure">
+            <input type="number" class="form-control mb-3" name="SkinThickness" id="SkinThickness" placeholder="Skin Thickness">
+            <input type="number" class="form-control mb-3" name="Insulin" id="Insulin" placeholder="Insulin">
+            <input type="number" class="form-control mb-3" name="BMI" id="BMI" placeholder="BMI">
+            <input type="number" class="form-control mb-3" name="DiabetesPedigreeFunction" id="DiabetesPedigreeFunction"placeholder="DiabetesPedigreeFunction" step="any">
+            <input type="number" class="form-control mb-3" name="Age" id="Age"placeholder="Age" step="any">
+            <input type="submit" class="btn btn-success" value="Predict Diabatic">
+        </form>
+							      <form action="/uploadfile" method="POST">
+									  <input type="submit" class="btn1" value="UPLOAD CSV FILE">
+									  <a class="btn4" href="https://github.com/akshaykadam771/Diabetes-Prediction-.git">Github Link</a>
+								  </form>
+
+                        </div>
+
+				</div>
+
+		</div>
+	</div>
+{% endblock %}

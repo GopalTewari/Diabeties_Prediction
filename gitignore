@@ -1,0 +1,8 @@
+.idea
+.ipynb_checkpoints
+WebScraping(Image).pdf
+__pycache__
+diabetes.csv
+logistic_deploy.py
+logistic_deploy_old.py
+Logistic_Regression.ipynb
